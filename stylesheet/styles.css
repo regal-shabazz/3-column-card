@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+html {
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.main-container {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+section {
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    padding: 2rem;
+}
+
+.sedans-card {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs-card {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-card {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.text-container {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    font-family: 'Lexend Deca', Sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.learn-more-btn {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.learn-more-btn:hover {
+    background-color: transparent;
+    border: 1px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.sedans-card .learn-more-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans-card .learn-more-btn:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+.suvs-card .learn-more-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs-card .learn-more-btn:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury-card .learn-more-btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury-card .learn-more-btn:hover {
+    color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 375px) {
+    .main-container {
+        width: 80%;
+        height: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    section {
+        height: 30rem;
+    }
+
+    p {
+        line-height: 2.5rem;
+    }
+}
+
